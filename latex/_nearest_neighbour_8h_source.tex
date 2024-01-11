@@ -1,0 +1,95 @@
+\hypertarget{_nearest_neighbour_8h_source}{}\doxysection{Nearest\+Neighbour.\+h}
+\label{_nearest_neighbour_8h_source}\index{C:/Users/kalpm/OneDrive/Desktop/Final\_OOP\_Course\_Project\_Kalp-\/Mehta/Final\_OOP\_Course\_Project\_Kalp-\/Mehta/NearestNeighbour.h@{C:/Users/kalpm/OneDrive/Desktop/Final\_OOP\_Course\_Project\_Kalp-\/Mehta/Final\_OOP\_Course\_Project\_Kalp-\/Mehta/NearestNeighbour.h}}
+\mbox{\hyperlink{_nearest_neighbour_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <math.h>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ NUM\_CHOICES\ 6}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_n_nclassifier}{NNclassifier}}}
+\DoxyCodeLine{00026\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{double}\ x;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{double}\ y;}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{double}\ z;}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ orientation;}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{double}\ distance;}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{class_n_nclassifier_a59490e16947a75a8c39a58ed9ff1b3d0}{NNclassifier}}();}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{class_n_nclassifier_a59490e16947a75a8c39a58ed9ff1b3d0}{NNclassifier}}(\textcolor{keywordtype}{double}\ x,\ \textcolor{keywordtype}{double}\ y,\ \textcolor{keywordtype}{double}\ z,\ \textcolor{keywordtype}{int}\ orientation,\ \textcolor{keywordtype}{double}\ distance);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_n_nclassifier_a516384b993d32b4f55cb14505c16405f}{getx}}();}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_n_nclassifier_aee86108da403569d89ac366c8cf5c849}{gety}}();}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_n_nclassifier_af923cf394d8a7634ce9c0779af7515d5}{getz}}();}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_n_nclassifier_a3105b54f217c9d4051c3ddfe563b7647}{getDistance}}();}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_n_nclassifier_a9eb9e748a9dfa3bfdd6629dabeaa11a8}{getOrientation}}();}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_n_nclassifier_a3f7fa8889347455465c6db65bbd7af54}{setx}}(\textcolor{keywordtype}{double}\ x);}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00131\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_n_nclassifier_a9df6238a7a0ab1fb0b9ce3bc383ed82d}{sety}}(\textcolor{keywordtype}{double}\ y);}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00142\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_n_nclassifier_afc3ea1081ef1a83ebbc297cbb6097363}{setz}}(\textcolor{keywordtype}{double}\ z);}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00153\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_n_nclassifier_a61990a3e6941a189e7bf36c0629ff8cd}{setDistance}}(\textcolor{keywordtype}{double}\ distance);}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00163\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_n_nclassifier_a56eeafabb61c4c81a7d9938459f693f7}{setOrientation}}(\textcolor{keywordtype}{int}\ orientation);}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00173\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_n_nclassifier_a8723bcc414cfdf85e4742756aee33bd8}{printSingle}}();}
+\DoxyCodeLine{00174\ }
+\DoxyCodeLine{00182\ }
+\DoxyCodeLine{00183\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_n_nclassifier_a9916e9223289be19953172e32f71bbb3}{findNearestNeighbour}}(\mbox{\hyperlink{class_n_nclassifier}{NNclassifier}}\ array[],\ \textcolor{keywordtype}{int}\ count);}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00192\ }
+\DoxyCodeLine{00193\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_n_nclassifier_a543f3597af70e6252bb43ac5707049d9}{loadTraining}}(\textcolor{keywordtype}{string}\ filename);}
+\DoxyCodeLine{00194\ }
+\DoxyCodeLine{00202\ }
+\DoxyCodeLine{00203\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_n_nclassifier_a243e6e6d880706035504a10431d9f5e6}{loadOther}}(\textcolor{keywordtype}{string}\ filenameTesting);}
+\DoxyCodeLine{00204\ }
+\DoxyCodeLine{00205\ }
+\DoxyCodeLine{00206\ }
+\DoxyCodeLine{00207\ \};}
+\DoxyCodeLine{00208\ }
+\DoxyCodeLine{00209\ }
+\DoxyCodeLine{00217\ }
+\DoxyCodeLine{00218\ }
+\DoxyCodeLine{00219\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_nearest_neighbour_8h_a38adaa94e172c40305dba5e53c638b9f}{comparison}}(\mbox{\hyperlink{class_n_nclassifier}{NNclassifier}}\ a,\ \mbox{\hyperlink{class_n_nclassifier}{NNclassifier}}\ b);}
+
+\end{DoxyCode}
